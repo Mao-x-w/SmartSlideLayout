@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.laomao.smartslidingmenu.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/my_layout"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#18B4ED"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:id="@+id/iv_head"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/head" />
+    </LinearLayout>
+    
+    <ListView android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="1"        
+        android:id="@+id/main_listview"></ListView>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="缩放"/>
+        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="平滑"/>
+        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3D"
+             />
+
+    </LinearLayout>
+
+</com.laomao.smartslidingmenu.MyLinearLayout>
